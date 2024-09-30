@@ -1,0 +1,496 @@
+:root{
+    --jeunRed: #ff0000;
+    --primary: #fb8500;
+    --secondary: #5c8001;
+    --jeunWhite: #ffffff;
+    --jeunBlack: #1f1f1f; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--jeunWhite) ;
+    background-image: url(./assets/page\ background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+header{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+header .topBar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--jeunBlack);
+    color: var(--jeunWhite);
+    font-size: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding-left: 200px;
+}
+header .topBar span{
+    color: var(--primary);
+}
+header .navContainer{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 100px;
+    gap: 20px;
+    /* border: dashed; */
+}
+header .navContainer .logo{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navContainer .logo img{
+    height: 100%;
+    width: 1000%;
+}
+
+header .navContainer .cart #menu-btn{
+    font-size: 30px;
+    display: none;
+}
+
+header .navContainer nav{
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header .navContainer #close{
+    font-size: 30px;
+    display: none;
+}
+
+header .navContainer nav ul{
+   height: auto;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+header .navContainer nav ul li{
+    list-style: none;
+}
+
+header .navContainer nav ul a{
+    text-decoration: none;
+    color: var(--jeunBlack);
+    font-size: 15px;
+}
+
+header .navContainer .cart{
+    height: auto;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navContainer .cart i{
+    font-size: 20px;
+    color: var(--jeunBlack);
+}
+
+
+.main-container{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container .hero-section{
+    height: 60vh;
+    width: 84vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-container .hero-section .left{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-container .hero-section .left h1 span {
+    color: var(--primary);
+}
+
+  .main-container .hero-section .left p {
+    color: var(--jeunBlack);
+    font-size: 15px;
+}
+  
+.main-container .hero-section .left a {
+    color: var(--jeunBlack);
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--jeunWhite);
+    background-color: var(--primary);
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    border-radius: 4px;
+  }
+.main-container .hero-section .right {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  }
+.main-container .hero-section .right img{
+    height: 550px;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.real{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 700px;
+    font-weight: 800;
+}
+.main-container section .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(128, 128, 128, 0.075);
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    margin: 2px 230px 0 0;
+    padding: 30px;
+    width: 100%;
+}
+.main-container section .heading .dir {
+    border: 3px solid #fb8500;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-size: 0;
+}
+.main-container section .heading .chefHat{
+    width:60px; 
+    margin-top: 30px;
+}
+.main-container section .heading a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fb8500;
+}
+.main-container section h2{
+    margin-left:150px ;
+    padding: 0 0 10px 0;
+}
+.main-container .section-2{
+    box-sizing: border-box;
+}
+.main-container .section-2 .div-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+}
+.div-container h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.div-container h5{
+    color: rgb(255, 166, 0);
+    font-size: 20px;
+}
+.main-container .two{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.main-container .two .image{
+    
+    margin: 150px 37px 0 0;
+}
+
+
+.foot{
+    background-color: #000000;
+    padding: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container .footer{
+    margin-top: 100px;
+    background-color: #000000;
+    height: 570px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.main-container .footer .head{
+    color: white;
+    margin-left: 120px;
+    margin-top: 120px;
+}
+.bless{
+    color: #fff;
+    margin-left: 100px;
+}
+
+.chefstuff{
+    background-color: rgb(230, 230, 230);
+    padding: 20px;
+    position: relative;
+    /* left: 300px; */
+    /* width: 80%; */
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 900px; */
+}
+.chefstuff img{
+    width: 500px;
+} 
+
+
+
+/* Media queries for responsiveness */
+
+
+@media (max-width: 500px){
+
+    header{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        border: dashed;
+    }
+    header .topBar{
+        height: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--jeunBlack);
+        color: var(--jeunWhite);
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding-left: 0;
+    }
+    header .topBar span{
+        color: var(--primary);
+    }
+    header .navContainer{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 0;
+        background-color: rgba(255, 255, 255, .6); /* transparent */
+    }
+    header .navContainer .logo{
+        height: 100%;
+        width: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .navContainer .logo img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    header .navContainer nav{
+        height: 100vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        background-color: var(--jeunWhite);
+        top: 40px;
+        left: 0;
+        border: dashed red;
+    }
+    header .navContainer #close{
+        font-size: 30px;
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 60vw;
+    }
+    
+    header .navContainer nav ul{
+       height: auto;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       gap: 20px;
+       padding-left: 30px;
+       margin-top: 100px;
+    }
+    
+    header .navContainer nav ul li{
+        list-style: none;
+    }
+    
+    header .navContainer nav ul li a{
+        text-decoration: none;
+        color: var(--jeunBlack);
+        font-size: 15px;
+    }
+    
+    header .navContainer .cart{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header .navContainer .cart #menu-btn{
+        font-size: 30px;
+        display: flex;
+    }
+
+    
+    header .navContainer .cart i{
+        font-size: 30px;
+        color: var(--jeunBlack);
+    }
+    
+    
+    .main-container{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .main-container .hero-section{
+        height: 60vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .main-container .hero-section .left{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+    }
+    .main-container .hero-section .left h1{
+        color: var(--jeunBlack);
+    }
+
+    .main-container .hero-section .left h1 span {
+        color: var(--primary);
+    }
+    
+      .main-container .hero-section .left p {
+        color: var(--jeunBlack);
+        font-size: 15px;
+    }
+      
+    .main-container .hero-section .left a {
+        color: var(--jeunBlack);
+        font-size: 15px;
+        text-decoration: none;
+        color: var(--jeunWhite);
+        background-color: var(--primary);
+        height: 40px;
+        width: auto;
+        padding: 10px;
+        border-radius: 4px;
+      }
+    .main-container .hero-section .right {
+        height: 100%;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    .main-container .hero-section .right img{
+        height: 450px;
+        width: 350px;
+        position: absolute;
+        top: 0;
+        right: -140px;
+        display: flex;
+        z-index: -3;
+    }
+}
+
+
+
+
+
+
+
+
